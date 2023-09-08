@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlogDeCafé</title>
+    <meta name="descripcion" content="Página web de blog de café">
 
-    <!--    Styles  -->
+    <!--    Preload    -   Styles  -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 
     <!--    Tipografias     -->
@@ -14,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!--    Imagen      -->
+    <link rel="stylesheet" href="img/blog1.jpg" as="imagen">
 
 </head>
 <body>
@@ -48,7 +54,7 @@
             <!--    1er Curso   -->
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog 1">
+                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog 1">
                 </div>
 
                 <div class="entrada_contenido">
@@ -65,7 +71,7 @@
             <!--    2do Curso   -->
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog 2">
+                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog 2">
                 </div>
 
                 <div class="entrada_contenido">
@@ -82,7 +88,7 @@
             <!--    3er Curso   -->
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog 3">
+                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog 3">
                 </div>
 
                 <div class="entrada_contenido">
@@ -115,7 +121,7 @@
                     </p>
 
                     <!--    Boton       -->
-                    <a href="entrada.html" class="boton boton-secundario">Ver Información</a>
+                    <a href="entrada.html" class="boton boton-secundario">Más Información sobre nuestros cursos</a>
                 </li>
 
                 <!--    2do Curso   -->
@@ -132,7 +138,7 @@
                     </p>
 
                     <!--    Boton       -->
-                    <a href="entrada.html" class="boton boton-secundario">Más Información</a>
+                    <a href="entrada.html" class="boton boton-secundario">Más Información sobre nuestros cursos</a>
                 </li>
             </ul>
         </aside>
@@ -153,5 +159,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>
 </html>
